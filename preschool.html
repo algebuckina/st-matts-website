@@ -1,0 +1,58 @@
+<div class="added">
+
+    <style>
+        .mySlides {
+            display: none;
+        }
+        
+        .slideshow {
+            padding-left: 12.5%;
+            padding-right: 12.5%;
+        }
+    </style>
+
+    <a href="http://stmatthewsps.net.au/" target="_blank">
+        <h1 class="middleme">St Matthews Preschool</h1>
+    </a>
+    <br>
+
+    <p class="added">St Matthews Preschool is a key community outreach of our church. Established in 1975 when our congregation formed, it is a vibrant and highly regarded Early Childhood education facility, which has now seen multiple generations attend. The Preschool
+        is a vital and integral part of our Mission. We have been blessed to have had many gifted Educators work in the service, who’s dedication and commitment has greatly enriched the lives of the children they have taught.</p>
+    <br>
+
+    <div class="slideshow" style="max-width:100%">
+        <img class="mySlides" src="https://i.imgur.com/iEck8Rt.jpg" style="width:100%">
+        <img class="mySlides" src="https://i.imgur.com/zjMAvFY.jpg" style="width:100%">
+        <img class="mySlides" src="https://i.imgur.com/0gEW1OK.jpg" style="width:100%">
+        <img class="mySlides" src="https://i.imgur.com/TRRqbtq.jpg" style="width:100%">
+        <img class="mySlides" src="https://i.imgur.com/eB2K5aG.jpg" style="width:100%">
+        <img class="mySlides" src="https://i.imgur.com/YnpHZDK.jpg" style="width:100%">
+        <img class="mySlides" src="https://i.imgur.com/7PAufx9.jpg" style="width:100%">
+        <img class="mySlides" src="https://i.imgur.com/vBh8Deq.jpg" style="width:100%">
+        <img class="mySlides" src="https://i.imgur.com/6515YGr.jpg" style="width:100%">
+        <img class="mySlides" src="https://i.imgur.com/Yq29MCk.jpg" style="width:100%">
+        <img class="mySlides" src="https://i.imgur.com/dPCm8pv.jpg" style="width:100%">
+    </div>
+
+
+    <br><br><br>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000); // Change image every 2 seconds
+        }
+    </script>
+</div>
