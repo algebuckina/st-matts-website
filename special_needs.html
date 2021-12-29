@@ -1,0 +1,53 @@
+<div class="added">
+
+    <style>
+        .mySlides {
+            display: none;
+        }
+        
+        .slideshow {
+            padding-left: 12.5%;
+            padding-right: 12.5%;
+        }
+    </style>
+
+    <a href="/category/32/special-needs">
+        <h1 class="middleme">Special Needs</h1>
+    </a>
+    <br>
+    <hr>
+
+    <h1 class="middleme">Shine</h1><br>
+    <p class="added">Shine is a special needs social group for all ages from high school up. We meet on Sunday from 5pm every fortnight during the school term and dinner is provided.</p>
+    <br>
+
+    <div class="slideshow" style="max-width:100%">
+        <img class="mySlides" src="https://i.imgur.com/g91863p.jpg" style="width:100%">
+        <img class="mySlides" src="https://i.imgur.com/yNCIutU.jpg" style="width:100%">
+        <img class="mySlides" src="https://i.imgur.com/RpUPGwj.jpg" style="width:100%">
+        <img class="mySlides" src="https://i.imgur.com/nOWCV1n.jpg" style="width:100%">
+        <img class="mySlides" src="https://i.imgur.com/zPleUtz.jpg" style="width:100%">
+    </div>
+
+
+    <br><br><br>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000); // Change image every 2 seconds
+        }
+    </script>
+</div>
