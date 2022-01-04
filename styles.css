@@ -5,6 +5,10 @@
 
 /*for mobile*/
 
+h1 {
+    text-align: center;
+}
+
 .content_img {
     position: relative;
     float: left;
