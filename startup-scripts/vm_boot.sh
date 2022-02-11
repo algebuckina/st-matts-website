@@ -7,3 +7,4 @@ sudo systemctl start mongod
 cd nodebb
 ./nodebb start
 
+exit 0
