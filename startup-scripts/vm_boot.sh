@@ -1,5 +1,5 @@
 #!/bin/bash
-# A simple script
+# website startup script for the vm
 
 sudo apt-get update
 sudo apt-get upgrade
