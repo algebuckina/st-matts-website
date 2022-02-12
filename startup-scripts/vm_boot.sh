@@ -6,5 +6,6 @@ sudo apt-get upgrade
 sudo systemctl start mongod
 cd nodebb
 ./nodebb start
+./nodebb log
 
 exit 0
