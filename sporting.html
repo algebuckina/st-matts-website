@@ -9,7 +9,7 @@
     <a href="http://www.goodenreservenetball.com/" target="_blank">
         <h1 class="middleme">Netball Club</h1>
     </a>
-    <h1 class=“middleme”><img src="https://i.imgur.com/GrwHZfr.jpg" class="middleme" alt="netball img" width="75%" height="auto"></h1>
+    <h1 class=“middleme”><img src="https://i.imgur.com/GrwHZfr.jpg" class="middleme" alt="netball img" width="85%" height="auto"></h1>
     <p class="added">The St Matthew's Uniting Church Netball Club celebrated 44 years of running in 2021. We are one of the clubs that form Gooden Reserve Netball Association which is a smaller competition focused on fun, fairness, and encourages a family friendly environment.</p>
     <p class="added">The competition runs from March to August each year with games played every Saturday (not school holidays) at Gooden Reserve in Baulkham Hills commencing from 12 to 4:30pm and training is held during the week.</p>
     <p>Online registration for each season begins in December and closes early February. For general enquires or registering to play, please email the club at <a href="mailto:stmatthewsnetballclub@hotmail.com?Subject= ">stmatthewsnetballclub@hotmail.com</a>        or find more information on their website <a href="http://www.goodenreservenetball.com/" target="_blank">HERE</a>
@@ -34,7 +34,14 @@
     <br><br>
     <hr>
     <h1 class="middleme">Soccer Club</h1>
-    <h1 class=“middleme”><img src="https://i.imgur.com/j4RKspQ.jpg" class="middleme" alt="soccer img" width="75%" height="auto"></h1>
+    <h1>
+        <div class="slideshow" style="max-width:100">
+            <img class="mySlides" src="/assets/uploads/files/1647496937104-soccer3.jpg" style="width:100%">
+            <img class="mySlides" src="/assets/uploads/files/1647496937162-soccer4.jpg" style="width:100%">
+            <img class="mySlides" src="/assets/uploads/files/1647496936986-soccer1.jpg" style="width:100%">
+            <img class="mySlides" src="/assets/uploads/files/1647496937046-soccer2.jpg" style="width:100%">
+        </div>
+    </h1>
     <p>
         The St Matthews Soccer Club started in 1977 and since then has provided the game of soccer to boy's and girls of all ages within the core atmosphere of good fellowship. Over recent years our junior club has dropped but we are still here to provide the
         game of soccer within the church family and beyond.
@@ -62,3 +69,22 @@
 
     <br><br><br>
 </div>
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+    }
+</script>

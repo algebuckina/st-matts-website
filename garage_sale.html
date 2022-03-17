@@ -4,7 +4,16 @@
         <h1 class="middleme">Op Shop</h1>
     </a>
 
-    <h1><img src="https://i.imgur.com/ZbUZ4xJ.jpg" class="middleme" alt="Op Shop Image" width="50%" height="auto"></h1>
+    <h1>
+        <div class="slideshow" style="max-width:100">
+            <img class="mySlides" src="/assets/uploads/files/1647495740581-op5.jpg" style="width:100%">
+            <img class="mySlides" src="/assets/uploads/files/1647495740541-op4.jpg" style="width:100%">
+            <img class="mySlides" src="/assets/uploads/files/1647495740500-op3.jpg" style="width:100%">
+            <img class="mySlides" src="/assets/uploads/files/1647495740454-op2.jpg" style="width:100%">
+            <img class="mySlides" src="/assets/uploads/files/1647495740411-op1.jpg" style="width:100%">
+        </div>
+    </h1>
+    <br>
 
     <p>We usually operate every TUESDAY, WEDNESDAY and THURSDAY (except for our Christmas break, mid December to end January) between the HOURS 9am-2pm. We will also be opening the FIRST SATURDAY of EACH MONTH between the HOURS 9am-12noon starting May 1st.</p>
     <p>We sell a good range of pre-loved clothing at low prices. You will find menswear, ladies wear and children’s clothing all neatly arranged in sizes. We also sell manchester, clothing accessories, craft items, jewellery, books and a range of bric-a-brac,
@@ -17,8 +26,29 @@
 
     <h1 class="middleme">Garage Sale</h1>
 
-    <h1><img src="assets/uploads/system/garage_sale.jpg" class="middleme" alt="Garage Sale Image" width="75%" height="auto"></h1>
+    <h1><img src="assets/uploads/system/garage_sale.jpg" class="middleme" alt="Garage Sale Image" width="100%" height="auto"></h1>
 
     <p>The garage sale has been suspended indefinitely, please come back later for more information. <br> They are normally held several times a year and many men and women from St. Matthew’s join together to prepare donated goods and set up for the sale
         on a Saturday which brings many people from the wider community. The funds raised are used to further the mission objectives of St. Matthew’s.</p>
 </div>
+
+<br><br><br>
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+    }
+</script>
