@@ -1,0 +1,39 @@
+<style>
+    .banner {
+        height: 250px;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(150, 109, 161);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 90px;
+        white-space: nowrap;
+        color: white;
+    }
+
+    .banner .closebtn {
+        position: absolute;
+        top: 50px;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        color: white;
+    }
+</style>
+
+<div id="banner" class="banner">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <h1>Mini Mart open Saturday from 9am to midday!</h1>
+</div>
+
+<script>
+    function closeNav() {
+        document.getElementById("banner").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
+
+<!--for changing highlight colour https://stackoverflow.com/questions/2258647/changing-the-highlight-color-when-selecting-text-in-an-html-text-input-->
