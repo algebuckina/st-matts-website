@@ -33,6 +33,20 @@ a:hover {
     border-color: rgb(104, 43, 119);
 }
 
+.btn-primary.active {
+    background-color: rgb(104, 43, 119);
+    border-color: rgb(104, 43, 119);
+}
+
+.btn-primary.disabled {
+    background-color: rgb(157, 135, 163);
+    border-color: rgb(150, 109, 161);
+}
+
+.btn-link {
+    color: #fff;
+}
+
 .panel-default>.panel-heading {
     background-color: rgb(150, 109, 161);
     border-color: rgb(104, 43, 119);
@@ -53,6 +67,37 @@ a:hover {
 
 .panel-title {
     color: white;
+}
+
+.help-block {
+    color: #fff;
+}
+
+.persona-fab {
+    background-color: rgb(104, 43, 119);
+}
+
+.topic .posts.timeline .timeline-event,
+.topic .posts.timeline>[component=post] {
+    border-left: 2px solid rgba(157, 135, 163, 0.514);
+}
+
+.topic .posts.timeline [component=post]:last-child:after{
+    border-bottom: 2px solid rgba(157, 135, 163, 0.514);
+}
+
+.posts-list .posts-list-item .post-body{
+    border-right: 2px solid rgb(104, 43, 119)
+}
+
+
+/*footer*/
+
+.well {
+    color: #fff;
+    background-color: rgb(157, 135, 163);
+    border-color: rgb(157, 135, 163);
+    border-radius: 10px;
 }
 
 /*for mobile*/
